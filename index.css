@@ -12,23 +12,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 .container {
-  height: 90%;
-  width: 1200px;
+  max-width: 800px;
+
   background-color: #c1ced3;
   display: flex;
+  margin: 20px;
   flex-direction: column;
-  margin: 20px auto;
   position: relative;
   flex-wrap: wrap;
 }
 .sub-container {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  padding: 10px;
+  justify-content: space-between;
+
   padding-top: 5px;
   flex-wrap: wrap;
 }
@@ -43,7 +44,7 @@ nav ul li a {
   text-decoration: none;
   margin-left: 6px;
   font-size: 0.45rem;
-
+  cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 nav ul li a:hover {
@@ -56,6 +57,7 @@ nav ul li button {
   color: white;
   background-color: #cb780c;
   margin-left: 5px;
+  cursor: pointer;
 }
 .logo-div {
   display: flex;
@@ -66,7 +68,7 @@ nav ul li button {
   width: 20px;
 }
 .logo-div div p {
-  font-size: 8px;
+  font-size: 9px;
   font-weight: 700;
 }
 .school-name #community {
@@ -79,14 +81,20 @@ nav ul li button {
 .main-container {
   display: flex;
   border-top: 1px solid #0c4a5f;
+  justify-content: space-between;
+  gap: 1rem;
 }
 .image-container img {
   margin: 30px;
-  width: 8rem;
+  width: 100%;
+
+  max-width: 240px;
   border-radius: 50%;
-  border: 1px solid #187a98;
-  outline: 6px solid #879ca2;
+  border: px solid #5ba5bb;
+
+  box-shadow: 2px 0px 10px 6px #a4e1f4;
 }
+
 .school-info {
   width: 50%;
   display: flex;
@@ -97,14 +105,14 @@ nav ul li button {
   flex-direction: column;
   margin: 30px;
   justify-content: space-evenly;
-  width: 10rem;
+  width: 12rem;
   text-align: left;
 }
 
 .info h1 {
   font-family: Arial, sans-serif;
   color: #0c4a5f;
-  font-size: 18px;
+  font-size: 20px;
 }
 #School {
   color: #cb780c;
@@ -115,7 +123,7 @@ nav ul li button {
   font-size: 24px;
 }
 .info p {
-  font-size: 7px;
+  font-size: 10px;
 }
 .contact {
   display: flex;
@@ -129,16 +137,16 @@ nav ul li button {
 .contact p {
   transform: rotate(180deg);
   writing-mode: vertical-rl;
-  font-size: 8px;
+  font-size: 9px;
 }
 .fa-brands {
-  font-size: 5px;
+  font-size: 7px;
   border: 1px solid #041318;
   border-radius: 50%;
   padding: 1px;
 }
 .contact hr {
-  height: 18px;
+  height: 24px;
   border: 0.2px solid #0c4a5f;
 }
 .button-container {
@@ -148,8 +156,20 @@ nav ul li button {
 }
 .button-container button {
   border: 1px solid #0c4a5f;
+  cursor: pointer;
+
   background-color: #c1ced3;
   font-size: 6px;
-  padding: 2px;
+  padding: 5px;
   margin-right: 10px;
+  transition: 0.4s;
+}
+.button-container button:hover {
+  background-color: #144e61;
+  color: aliceblue;
+}
+@media screen and (max-width: 480px) {
+  .info p {
+    font-size: 12px;
+  }
 }
