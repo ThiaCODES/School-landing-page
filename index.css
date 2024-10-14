@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "KUNSTLER";
+  src: url("./Asset/KUNSTLER.TTF") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0c4a5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  width: 100%;
+}
+.container {
+  height: 90%;
+  width: 1200px;
+  background-color: #c1ced3;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  position: relative;
+  flex-wrap: wrap;
+}
+.sub-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 5px;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  margin-left: 6px;
+  font-size: 0.45rem;
+
+  transition: 0.3s ease-in-out;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav ul li button {
+  border: none;
+  font-size: 0.45rem;
+  padding: 0 8px;
+  color: white;
+  background-color: #cb780c;
+  margin-left: 5px;
+}
+.logo-div {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.logo-div img {
+  width: 20px;
+}
+.logo-div div p {
+  font-size: 8px;
+  font-weight: 700;
+}
+.school-name #community {
+  color: rgb(203, 120, 12);
+}
+.school-name #school {
+  color: #0c4a5f;
+  font-size: 10px;
+}
+.main-container {
+  display: flex;
+  border-top: 1px solid #0c4a5f;
+}
+.image-container img {
+  margin: 30px;
+  width: 8rem;
+  border-radius: 50%;
+  border: 1px solid #187a98;
+  outline: 6px solid #879ca2;
+}
+.school-info {
+  width: 50%;
+  display: flex;
+}
+.info {
+  display: flex;
+
+  flex-direction: column;
+  margin: 30px;
+  justify-content: space-evenly;
+  width: 10rem;
+  text-align: left;
+}
+
+.info h1 {
+  font-family: Arial, sans-serif;
+  color: #0c4a5f;
+  font-size: 18px;
+}
+#School {
+  color: #cb780c;
+}
+#now {
+  color: #0c4a5f;
+  font-family: "KUNSTLER";
+  font-size: 24px;
+}
+.info p {
+  font-size: 7px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  top: 30%;
+  right: 1%;
+}
+.contact p {
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  font-size: 8px;
+}
+.fa-brands {
+  font-size: 5px;
+  border: 1px solid #041318;
+  border-radius: 50%;
+  padding: 1px;
+}
+.contact hr {
+  height: 18px;
+  border: 0.2px solid #0c4a5f;
+}
+.button-container {
+  display: flex;
+
+  margin-top: 4px;
+}
+.button-container button {
+  border: 1px solid #0c4a5f;
+  background-color: #c1ced3;
+  font-size: 6px;
+  padding: 2px;
+  margin-right: 10px;
+}
