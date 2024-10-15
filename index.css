@@ -233,15 +233,11 @@ nav.fa-bars {
   }
 
   .image-container img {
-    margin: 15% auto;
-    width: 100%;
     max-width: 18rem;
-
-    max-height: 500px;
-
-    border-radius: 50%;
-    border: px solid #5ba5bb;
-
-    box-shadow: 2px 0px 10px 6px #a4e1f4;
+  }
+}
+@media screen and (min-width: 500px) and(max-width:900px) {
+  .image-container img {
+    max-width: 20rem;
   }
 }
