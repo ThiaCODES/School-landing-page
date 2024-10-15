@@ -121,7 +121,8 @@ nav ul li button {
 .image-container img {
   margin: 15% auto;
   width: 100%;
-  max-width: 400px;
+  max-width: 30rem;
+
   max-height: 500px;
 
   border-radius: 50%;
@@ -229,5 +230,18 @@ nav.fa-bars {
   nav ul li a {
     font-size: 12px;
     color: aliceblue;
+  }
+
+  .image-container img {
+    margin: 15% auto;
+    width: 100%;
+    max-width: 18rem;
+
+    max-height: 500px;
+
+    border-radius: 50%;
+    border: px solid #5ba5bb;
+
+    box-shadow: 2px 0px 10px 6px #a4e1f4;
   }
 }
