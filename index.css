@@ -16,25 +16,58 @@ body {
   width: 100%;
 }
 .container {
-  max-width: 800px;
-
+  max-width: 1200px;
+  width: 90%;
+  justify-content: space-between;
+  align-self: center;
   background-color: #c1ced3;
   display: flex;
   margin: 20px;
   flex-direction: column;
+  min-height: 100vh;
   position: relative;
-  flex-wrap: wrap;
+}
+header h1 {
+  font-size: 3rem;
+  color: #0c4a5f;
+  text-align: center;
 }
 .sub-container {
   display: flex;
   padding: 10px;
   justify-content: space-between;
-
-  padding-top: 5px;
   flex-wrap: wrap;
+  border-bottom: 1px solid #0c4a5f;
 }
-nav ul {
+.fa-bars {
+  display: none;
+}
+nav .unordered {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav .unordered li {
+  list-style: none;
+  margin: 10%;
+}
+nav .list {
+  display: none;
+  position: absolute;
+  max-height: 100vh;
+  flex-direction: column;
+  gap: px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #0c4a5f;
+  width: 50%;
+  padding: 15%;
+  z-index: 999;
+  top: 4.8%;
+  color: aliceblue;
+  right: 0;
+  text-align: left;
 }
 nav ul li {
   list-style: none;
@@ -80,15 +113,18 @@ nav ul li button {
 }
 .main-container {
   display: flex;
-  border-top: 1px solid #0c4a5f;
-  justify-content: space-between;
-  gap: 1rem;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 .image-container img {
-  margin: 30px;
+  margin: 30px auto;
   width: 100%;
+  max-height: 500px;
 
-  max-width: 240px;
   border-radius: 50%;
   border: px solid #5ba5bb;
 
@@ -96,23 +132,29 @@ nav ul li button {
 }
 
 .school-info {
-  width: 50%;
+  width: 100%;
   display: flex;
+  margin-bottom: 20px;
 }
 .info {
   display: flex;
-
+  align-items: center;
   flex-direction: column;
-  margin: 30px;
-  justify-content: space-evenly;
-  width: 12rem;
+  width: 100%;
+  margin: 10px;
+  justify-content: center;
+  gap: 30px;
   text-align: left;
 }
 
-.info h1 {
+.info span {
   font-family: Arial, sans-serif;
   color: #0c4a5f;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 35px;
+}
+main {
+  margin: 10px auto;
 }
 #School {
   color: #cb780c;
@@ -123,31 +165,27 @@ nav ul li button {
   font-size: 24px;
 }
 .info p {
-  font-size: 10px;
+  font-size: 20px;
 }
 .contact {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 5px;
-  position: absolute;
-  top: 30%;
-  right: 1%;
+  justify-content: center;
+  gap: 10px;
+  border-top: 1px solid #041318;
+  padding: 5px;
 }
 .contact p {
-  transform: rotate(180deg);
-  writing-mode: vertical-rl;
-  font-size: 9px;
+  font-size: 10px;
+  font-weight: bold;
 }
 .fa-brands {
   font-size: 7px;
   border: 1px solid #041318;
   border-radius: 50%;
   padding: 1px;
-}
-.contact hr {
-  height: 24px;
-  border: 0.2px solid #0c4a5f;
 }
 .button-container {
   display: flex;
@@ -164,12 +202,30 @@ nav ul li button {
   margin-right: 10px;
   transition: 0.4s;
 }
+nav.fa-bars {
+  display: none;
+}
 .button-container button:hover {
   background-color: #144e61;
   color: aliceblue;
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 800px) {
   .info p {
     font-size: 12px;
+  }
+  nav .unordered {
+    display: none;
+  }
+  nav .list {
+    display: flex;
+  }
+  .fa-bars {
+    padding-top: 4px;
+    display: block;
+  }
+  nav ul li a {
+    font-size: 12px;
+    color: aliceblue;
   }
 }

@@ -1,0 +1,106 @@
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #0c4a5f;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.image-container img {
+  margin: 30px auto;
+  width: 100%;
+  max-height: 240px;
+  max-width: 240px;
+  border-radius: 50%;
+  border: px solid #5ba5bb;
+
+  box-shadow: 2px 0px 10px 6px #a4e1f4;
+}
+
+.school-info {
+  width: 50%;
+  display: flex;
+}
+.info {
+  display: flex;
+
+  flex-direction: column;
+  margin: 30px;
+  justify-content: space-evenly;
+  width: 12rem;
+  text-align: left;
+}
+
+.info h1 {
+  font-family: Arial, sans-serif;
+  color: #0c4a5f;
+  font-size: 20px;
+}
+#School {
+  color: #cb780c;
+}
+#now {
+  color: #0c4a5f;
+  font-family: "KUNSTLER";
+  font-size: 24px;
+}
+.info p {
+  font-size: 12px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  top: 30%;
+  right: 1%;
+}
+.contact p {
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  font-size: 8px;
+}
+.fa-brands {
+  font-size: 7px;
+  border: 1px solid #041318;
+  border-radius: 50%;
+  padding: 1px;
+}
+.contact hr {
+  height: 24px;
+  border: 0.2px solid #0c4a5f;
+}
+.button-container {
+  display: flex;
+
+  margin-top: 4px;
+}
+.button-container button {
+  border: 1px solid #0c4a5f;
+  cursor: pointer;
+
+  background-color: #c1ced3;
+  font-size: 6px;
+  padding: 5px;
+  margin-right: 10px;
+  transition: 0.4s;
+}
+.button-container button:hover {
+  background-color: #144e61;
+  color: aliceblue;
+}
+@media screen and (max-width: 600px) {
+  .info p {
+    font-size: 12px;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .fa-bars {
+    padding-top: 4px;
+    display: block;
+  }
+}

@@ -21,7 +21,8 @@
           </div>
         </div>
         <nav class="navigation-bar">
-          <ul>
+          <i class="fa-solid fa-bars"></i>
+          <ul class="unordered">
             <li><a href="#">Home</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Admission</a></li>
@@ -32,7 +33,9 @@
           </ul>
         </nav>
       </div>
-
+      <header>
+        <h1>Welcome to Our School</h1>
+      </header>
       <div class="main-container">
         <div class="image-container">
           <img
@@ -43,8 +46,8 @@
         <div class="school-info">
           <div class="info">
             <main>
-              <h1>Join Our</h1>
-              <h1 id="School">School <span id="now">Now</span></h1>
+              <span>Join Our</span>
+              <span id="School">School </span><span id="now">Now</span>
             </main>
 
             <p>
@@ -58,16 +61,24 @@
               ><button type="submit">Classroom</button>
             </div>
           </div>
-          <div class="contact">
-            <p>Social Media</p>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <hr />
-          </div>
         </div>
       </div>
+      <div class="contact">
+        <p>Contact Us Via:</p>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
     </div>
+    <script>
+      const unorderedList = document.querySelector("ul");
+
+      const navbar = document.querySelector(".fa-solid");
+      navbar.addEventListener("click", (e) => {
+        e.preventDefault();
+        unorderedList.classList.toggle("list");
+      });
+    </script>
   </body>
 </html>
